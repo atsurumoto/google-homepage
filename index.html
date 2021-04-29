@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title="google-homepage"></title>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">      
+    <title="alexis' google-homepage"></title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+          <link rel="stylesheet" href="style.css">      
 </head>
+
 <body>
     <div class="topnav">
         <a href="#">About</a>
@@ -17,40 +17,26 @@
         </div>
       </div>   
 
-      <div class="google">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      <div class="google-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+             alt="google-logo" 
+             class="center-logo">
         <input id="search-bar" type="text">
         <button id="gsearch" type="Submit">Google Search</button>
         <button id="lucky" type="Submit">I'm feeling lucky</button>
+            </div>
+         </div>
+    
+    <div class="footer">
+        <p>Carbon neutral since 2007</p>
+        <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
     </div>
 </body>
-
-<style>
-.topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav-right {
-    float: right;
-}
-
-.google {
-    
-}
-
-#search-bar {
-    display: flex;
-}
-
-#gsearch {
-    display: flex;
-}
-
-#lucky {
-    display: flex;
-}
-</style>
 </html>
