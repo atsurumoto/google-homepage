@@ -1,29 +1,45 @@
 <style>
-
-.topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: arial,sans-serif;
+body {
+    margin: 0;
+    font-family: arieal, sans-serif;
+    font-size: 0.5em;
 }
 
-ul {
+a {
+    margin: 5px;
     text-decoration: none;
-    list-style-type: none;
+    color: black;
 }
 
-.topnav-right li a {
-    float: right;
-    text-decoration: none;
-    font-family: arial,sans-serif;
+a:hover {
+    text-decoration: underline;
 }
 
-.signIn {
-    background-color:#4285F4;
-    color: #ffffff;
-    padding: 5px 10px;
-    margin-top: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+}
+
+ul > a, ul > img {
+    padding: 0 10px;
+}
+
+.apps-icon {
+    height: 15px;
+}
+
+.apps-icon:hover {
+    cursor: pointer;
+}
+
+.alexis {
+    height: 30px;
+    border-radius: 50%;
 }
 
 .center-logo {
