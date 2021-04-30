@@ -5,12 +5,13 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: arial,sans-serif;
 }
 
 .topnav-right a {
     float: right;
     text-decoration: none;
-    
+    font-family: arial,sans-serif;
 }
 
 .center-logo {
@@ -21,16 +22,32 @@
    margin-bottom: 25px;
 }
 
+.searchContainer i {
+    position:relative;
+    top: 2px;
+    left: 5px;
+}
 
+#mic i {
+    position: relative;
+    top: 2px;
+    left: 500px;
+}
 
-#search-bar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 35%;
-    width: 350px;
-    height: 25px;
-    margin-bottom: 25px;
+.searchContainer {
+    margin:0 auto;
+    width: 450px;
+    height: 35px;
+    border-radius: 30px;
+    border:1px solid gray;
+}
+
+.searchBar {
+    width: 300px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    outline: none;
 }
 
 #gsearch {
@@ -55,11 +72,13 @@
 
 .footer p {
     text-align: center;
+    font-family: arial,sans-serif;
 }
 
 .footer li {
     display: inline;
     text-decoration: none;
+    font-family: arial,sans-serif;
 }
 
 li:hover {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title="alexis' google-homepage"></title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
@@ -11,19 +12,27 @@
     <div class="topnav">
         <a href="#">About</a>
         <a href="#">Store</a>
+
         <div class="topnav-right">
           <a href="#">Gmail</a>
           <a href="#">Images</a>
         </div>
       </div>   
 
-      <div class="google-container">
+      <div class="google-icon">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
              alt="google-logo" 
              class="center-logo">
-        <input id="search-bar" type="text">
+
+        <div class="searchContainer">
+            <i class="material-icons">search</i>
+            <i id="mic" class="material-icons">mic</i>
+            <input class="searchBar" type="text">
+        </div>
+            
         <button id="gsearch" type="Submit">Google Search</button>
         <button id="lucky" type="Submit">I'm feeling lucky</button>
+                
             </div>
          </div>
     
