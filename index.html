@@ -14,8 +14,12 @@
         <a href="#">Store</a>
 
         <div class="topnav-right">
-          <a href="#">Gmail</a>
-          <a href="#">Images</a>
+            <ul>
+                <li><a href="#signin"><button class="signIn" type="button">Sign Out</button></a></li>
+                <li><a href="#apps"><i id="apps" class="material-icons">apps</i></a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#gmail">Gmail</a></li>
+            </ul>
         </div>
       </div>   
 
@@ -25,27 +29,29 @@
              class="center-logo">
 
         <div class="searchContainer">
-            <i class="material-icons">search</i>
+            <i id="search" class="material-icons">search</i>
             <i id="mic" class="material-icons">mic</i>
             <input class="searchBar" type="text">
         </div>
-            
-        <button id="gsearch" type="Submit">Google Search</button>
-        <button id="lucky" type="Submit">I'm feeling lucky</button>
-                
-            </div>
+        <div class="searchButtons">
+            <button type="Submit">Google Search</button>
+            <button type="Submit">I'm feeling lucky</button>
+        </div>
          </div>
     
     <div class="footer">
-        <p>Carbon neutral since 2007</p>
         <ul>
             <li>Advertising</li>
             <li>Business</li>
             <li>How Search works</li>
+        </ul>    
+    <div class="footer-right">
+        <ul>
             <li>Privacy</li>
             <li>Terms</li>
             <li>Settings</li>
-        </ul>
+                </ul>
+    </div>
     </div>
 </body>
 </html>
