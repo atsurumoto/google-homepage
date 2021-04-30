@@ -1,8 +1,16 @@
 <style>
+
 body {
     margin: 0;
-    font-family: arieal, sans-serif;
-    font-size: 0.5em;
+}
+
+header {
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+}
+
+.material-icons {
+    color: #c6c8cc;
 }
 
 a {
@@ -56,22 +64,26 @@ ul > a, ul > img {
     left: 15px;
 }
 
-.searchContainer #mic {
+.mic {
+    height: 20px;
+}
+
+.searchContainer .mic {
     position: relative;
-    top: 7px;
-    left: 385px;
+    top: 5px;
+    left: 440px;
 }
 
 .searchContainer {
     margin:0 auto;
-    width: 450px;
+    width: 500px;
     height: 35px;
     border-radius: 30px;
-    border: 1px solid #bcbfc3;
+    border: 1px solid #dadce0;
 }
 
 .searchBar {
-    width: 300px;
+    width: 400px;
     height: 30px;
     border: none;
     font-size: 15px;
@@ -89,34 +101,20 @@ button {
 }
 
 button:hover {
-    border: 1px solid #bcbfc3;
+    border: 1px solid #dadce0;
     padding: 5px 10px;
+    border-radius: 4px;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
+footer {
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+    display: flex;
+    place-content: flex-end space-between;
+    padding-right: 50px;
 }
 
-.footer p {
-    text-align: center;
-    font-family: arial,sans-serif;
-}
-
-.footer li {
-    display: inline;
+.footer-items {
     text-decoration: none;
-    font-family: arial,sans-serif;
-}
-
-.footer-right {
-    float: right;
-}
-
-li:hover {
-    text-decoration: underline;
 }
 </style>
