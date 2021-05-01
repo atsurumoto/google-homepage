@@ -2,61 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./img/gicon.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexis google</title>
+    <link rel="icon" href="./img/gicon.jpeg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">     
 </head>
-
 <body>
+
     <header>
         <nav>
-            <ul class="topnav">
+            <ul class="topnav-left">
                 <a href="#">About</a>
                 <a href="#">Store</a>
             </ul>    
 
-            <ul class="topnav">
+            <ul class="topnav-right">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
-                <img class="apps-icon" src="./img/gmenu.png" alt=
+                <img class="apps-icon" src="./img/google-apps.png" alt=
         "google-apps-icon">
-                <img class="alexis" src="./img/alexisuser.jpeg" alt="user-icon">
+                <img class="alexis" src="./img/alexis.jpeg" alt="user-icon">
         </nav>    
             </ul>
         </header>
-    <main> 
-      <div class="google-icon">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-             alt="google-logo" 
-             class="center-logo">
 
+    <section> 
+      
+        <img class="googleLogo" src="./img/googlelogo-color.png">
         <div class="searchContainer">
             <i id="search" class="material-icons">search</i>
-            <img class="mic" src="./img/gmiclogo.png" alt="goggle-mic-icon">
             <input class="searchBar" type="text">
+            <img class="mic" src="./img/mic.png" alt="goggle-mic-icon">    
         </div>
-        <div class="searchButtons">
+
+        <div class="buttonContainer">
             <button type="Submit">Google Search</button>
             <button type="Submit">I'm feeling lucky</button>
         </div>
-         </div>
-    </main> 
+         
+        </section> 
 
     <footer>
-        <ul class="footer-items">
-            <a href="#">Advertising</a>
-            <a href="#">Business</li>
-            <a href="#">How Search works</li>
-        </ul>    
+        <nav id="footer-nav">
+            <ul id="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </ul>    
 
-        <ul class="footer-items">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-                </ul>
+            <ul id="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </ul>
+        </nav>                
     </footer>
-
+    
 </body>
 </html>
