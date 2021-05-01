@@ -1,7 +1,7 @@
-<style>
-
 body {
     margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
 }
 
 header {
@@ -28,93 +28,169 @@ nav {
     justify-content: space-between;
 }
 
-.topnav {
+.topnav-left {
     display: flex;
+    justify-content: flex-end
     align-items: center;
+    padding-left: 20px; /* default padding of 40px */
+}
+
+.topnav-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
 }
 
 ul > a, ul > img {
-    padding: 0 10px;
-}
-
-.apps-icon {
-    height: 15px;
+    padding: 0 5px;
 }
 
 .apps-icon:hover {
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 .alexis {
-    height: 30px;
+    height: 28px;
+    width: 28px;
     border-radius: 50%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.center-logo {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 150px;
-   margin-bottom: 25px;
+.alexis:hover {
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.searchContainer #search {
-    position:relative;
-    top: 7px;
-    left: 15px;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
 }
 
-.mic {
-    height: 20px;
-}
-
-.searchContainer .mic {
-    position: relative;
-    top: 5px;
-    left: 440px;
+.googleLogo {
+    margin-bottom: 25px;
 }
 
 .searchContainer {
-    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
     width: 500px;
-    height: 35px;
-    border-radius: 30px;
+    height: 38px;
     border: 1px solid #dadce0;
+    border-radius: 20px;
 }
 
-.searchBar {
-    width: 400px;
-    height: 30px;
+.searchContainer > input {
+    flex-grow: 1;
     border: none;
-    font-size: 15px;
     outline: none;
 }
 
-.searchButtons{
-    text-align: center;  
+.material-icons {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.mic {
+    margin-right: 10px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.buttonContainer {
+    padding-top: 25px;
 }
 
 button {
-    margin-top: 30px;
-    border: none;
     background-color: white;
+    border: none;
+    padding: 0 20px;
+    margin: 0 5px;
+    height: 40px;
 }
 
 button:hover {
     border: 1px solid #dadce0;
+    box-shadow: 0 0 10px #dadce0;
     padding: 5px 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {
-    font-family: arial, sans-serif;
-    font-size: 0.9em;
-    display: flex;
-    place-content: flex-end space-between;
-    padding-right: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #f2f2f2;
 }
 
-.footer-items {
-    text-decoration: none;
+#footer-left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
 }
-</style>
+
+#footer-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    #footer-left {
+        justify-content: center;
+    }
+
+    #footer-right {
+        justify-content: center;
+    }
+
+    .searchContainer {
+        width: 95vw;
+    }
+}
+
+@media (max-height: 525px) {
+
+    body {
+        overflow-x: hidden; /* gets rid of scroll bar */
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-height: 575px) and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden; /* gets rid of scroll bar */
+    }
+
+    section {
+        margin-bottom: 10px;
+    }
+}
